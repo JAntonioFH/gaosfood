@@ -6,7 +6,7 @@ body{
 }
 #div-principal{
     display: flex;
-    background-color: white;
+    background-color: #f8eff1;
 }
 #menu-lateral{
     width: 13vh;

@@ -1,3 +1,14 @@
+class productos {
+    constructor(categoria, nombre, descripcion, precio, imagen){
+        this.categoria = categoria
+        this.nombre = nombre
+        this.descripcion = descripcion
+        this.precio = precio
+        this.imagen = imagen
+    }
+}
+
+
 function cambioMenus(seleccion){
     document.getElementById("hamburguesas").style.display = "none"
     document.getElementById("sushi").style.display = "none"
