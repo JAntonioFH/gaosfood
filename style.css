@@ -1,0 +1,102 @@
+body{
+    margin: 0px;
+}
+#header{
+    width: 100vw;
+}
+#div-principal{
+    display: flex;
+    background-color: white;
+}
+#menu-lateral{
+    width: 13vh;
+    height: 875px;
+    background-color: #C1A3A3;
+}
+
+#contenido-principal{
+    height: 100vh;
+    width: 100vh;
+}
+#logo{
+    font-family: lobster;
+    color: #F3C5C5;
+    padding: 10px 0;
+    background-color: #694E4E;
+    width: 100vw;
+    margin: 0 auto;
+    text-align: center;
+    text-shadow: 3px 5px 5px #FF74B1;
+}
+.boton-iconos-menu-lateral{
+    height: auto;
+    width: 100%;
+    margin-top: 6vh;
+    background-color: #C1A3A3;
+    /* border: black solid 1px; */
+    
+}
+.boton-iconos-menu-lateral:active{
+    height: auto;
+    width: 100%;
+    background-color: #9b2e5d;
+    
+}
+.imagenes-iconos-menu-lateral{
+    height: auto;
+    width: 100%;
+}
+.titulos{
+    text-align: center;
+    padding: 0px 0px;
+    font-family: 'Merriweather', serif;
+    width:200px;
+    margin: 0 auto;
+}
+.productos{
+    display: flex;
+    font-size: 1vh;
+    font-family: 'Merriweather', serif;
+    height: 7%;
+    width: 90%;
+    border: #F3C5C5 solid;
+    border-radius: 10px;
+    margin: 1vh 0 0vh 1vh;
+    overflow: scroll;
+}
+.nombre-del-producto{
+    font-weight: bold;
+    font-size: 8px;
+    background-color: #F3C5C5;
+    color: black;
+    text-align: center;
+    padding: 3px 0;
+    margin: 0 auto;
+}
+.descripcion-del-producto{
+    font-size: 7px;
+    width: 132px;
+    margin-top: 2px;
+    margin-left: 4px;
+    margin-bottom: 3px;
+    text-align: justify;
+
+}
+
+.imagen-producto{
+    height: 6vh;
+    margin-top: 10px;
+    margin-left: 42px;
+}
+.precio{
+    font-size: 10px;
+    margin: 20px 0 20px 10px;
+}
+.precio-ensaladas{
+    font-size: 9px;
+    margin: 0 10px;
+}
+.inicio-oculto{
+    display: none;
+}
+
