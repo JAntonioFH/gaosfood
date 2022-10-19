@@ -96,6 +96,14 @@ body{
     margin-top: 10px;
     margin-left: 42px;
 }
+.imagen-producto.active{
+    height: 50vh;
+    margin-top: 10px;
+    margin-left: 42px;
+}
+.contenedor-imagenes{
+    height: 30px;
+}
 
 .precio{
     font-size: 10px;

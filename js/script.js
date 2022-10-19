@@ -107,7 +107,7 @@ function mostrarProductos(){
                 <div class="precio">
                     $${producto.precio}
                 </div>
-                <div>
+                <div class="contenedor-imagenes">
                     <div class="modal-container">
                        <img class="imagen-producto" src="${producto.imagen}"/>
                     </div>
@@ -134,12 +134,14 @@ document.querySelectorAll(".modal-container img").forEach(el=>{
     el.addEventListener("click", function(ev){
         ev.stopPropagation()
         this.parentNode.classList.add("active")
+        this.classList.add("active")
     })
 })
 
 document.querySelectorAll(".modal-container").forEach(el=>{
     el.addEventListener("click", function(ev){
         this.classList.remove("active")
+        this.firstElementChild.classList.remove("active")
     })
 })
 
