@@ -76,9 +76,10 @@ arregloProductos.push(hamburguesaClasica,hamburguesaGuacamole,hamburguesaHawaian
 function horariosDeServicio(){
     let today = new Date()
     let dia = today.getDay() 
-    if (dia == 3 ) {
+    if (dia == 0 ) {
         document.getElementById("div-principal").style.display = "none"
     }
+    mostrarProductos()
 }
 
 
@@ -94,7 +95,7 @@ function cambioMenus(seleccion){
 function mostrarProductos(){
     arregloProductos.forEach((producto) => {
         imprimirHamburguesas = `                     
-            <article class="productos">
+            <div class="productos">
                 <div>
                     <div class="nombre-del-producto">
                         ${producto.nombre}
@@ -107,9 +108,11 @@ function mostrarProductos(){
                     $${producto.precio}
                 </div>
                 <div>
-                    <img class="imagen-producto" src="${producto.imagen}"/>
+                    <div class="modal-container">
+                       <img class="imagen-producto" src="${producto.imagen}"/>
+                    </div>
                 </div>
-            </article>`
+            </div>`
         if (producto.categoria=="hamburguesas") {
             hamburguesas.innerHTML += imprimirHamburguesas
         }else if(producto.categoria=="sushi"){
@@ -123,8 +126,21 @@ function mostrarProductos(){
         }
     
     })
-    
 }
-// horariosDeServicio()
-mostrarProductos()
+horariosDeServicio()
+
+
+document.querySelectorAll(".modal-container img").forEach(el=>{
+    el.addEventListener("click", function(ev){
+        ev.stopPropagation()
+        this.parentNode.classList.add("active")
+    })
+})
+
+document.querySelectorAll(".modal-container").forEach(el=>{
+    el.addEventListener("click", function(ev){
+        this.classList.remove("active")
+    })
+})
+
 
