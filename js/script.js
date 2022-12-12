@@ -76,7 +76,7 @@ arregloProductos.push(hamburguesaClasica,hamburguesaGuacamole,hamburguesaHawaian
 function horariosDeServicio(){
     let today = new Date()
     let dia = today.getDay() 
-    if (dia == 0 ) {
+    if (dia == 50 ) {
         document.getElementById("div-principal").style.display = "none"
     }
     mostrarProductos()
